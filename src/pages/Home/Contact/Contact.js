@@ -18,15 +18,19 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='h-screen'>
+        <div id='contact' className='my-20'>
             <h2 className='text-4xl font-bold text-center my-10'>Contact Me</h2>
             <div className="hero">
-                <div className="hero-content flex-col lg:flex-row">
-                    <div className="text-center lg:text-left w-1/2">
-                        <h1 className="text-5xl font-bold">Contact Me</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <div className="w-4/5 hero-content flex-col lg:flex-row">
+                    <div className="w-full lg:w-1/2 text-center lg:text-left">
+                        <h1 className="text-5xl font-bold">My Contact Info</h1>
+                        <p className="py-6">
+                            <strong>Address: </strong> Dhaka, Bangladesh <br />
+                            <strong>Phone: </strong> +8801723795366 <br />
+                            <strong>Email: </strong> shamim.sarker.2023@gmail.com <br />
+                        </p>
                     </div>
-                    <div className="card flex-shrink-0 w-1/2 shadow-2xl bg-base-100">
+                    <div className="w-full lg:w-1/2 card flex-shrink-0 shadow-2xl bg-base-100">
                         <form onSubmit={sendMessage} className="card-body">
                             <div className="form-control">
                                 <input name='name' type="text" placeholder="Your Name" className="input input-bordered" />
