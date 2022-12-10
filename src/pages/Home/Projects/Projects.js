@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div>
+        <div id='projects' className='h-screen'>
             <h2 className='text-4xl font-bold text-center my-16'>My Projects</h2>
             <div className='w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5'>
                 <div className="card card-compact bg-base-100 shadow-xl">

@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link, ScrollLink} from 'react-scroll';
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-blue-200">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -11,13 +11,13 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <Link to='#'>Home</Link>
+                            <Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
                         </li>
                         <li>
-                            <Link to='#'>Projects</Link>
+                            <Link activeClass="active" to="projects" spy={true} smooth={true}>Projects</Link>
                         </li>
                         <li>
-                            <Link to='#'>Contact</Link>
+                            <Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link>
                         </li>
                     </ul>
                 </div>
@@ -26,18 +26,18 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <Link to='#'>Home</Link>
+                        <Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
                     </li>
                     <li>
-                        <Link to='#'>Projects</Link>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true}>Projects</Link>
                     </li>
                     <li>
-                        <Link to='#'>Contact</Link>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link>
                     </li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                <button className='btn btn-primary'>Get Started</button>
             </div>
         </div>
     );
