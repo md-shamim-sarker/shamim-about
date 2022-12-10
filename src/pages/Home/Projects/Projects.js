@@ -6,7 +6,7 @@ import schooling from '../../../assets/schooling.jpg';
 const Projects = () => {
     return (
         <div id='projects'>
-            <h2 className='text-4xl font-bold text-center my-16'>My Projects</h2>
+            <h2 className='text-4xl font-bold text-center my-10 pt-20'>My Projects</h2>
             <div className='w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10'>
                 <div className="card card-compact bg-base-100 shadow-xl">
                     <figure><img src={dress} alt="..." className='w-full' /></figure>

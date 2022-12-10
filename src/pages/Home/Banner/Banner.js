@@ -5,8 +5,8 @@ import {FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa';
 const Banner = () => {
     return (
         <div id='home' className="hero bg-base-100">
-            <div className="hero-content flex-col lg:flex-row-reverse gap-x-32 py-10">
-                <img src={shamim} className="w-full lg:w-1/3 rounded-lg shadow-2xl" alt='...' />
+            <div className="hero-content flex-col lg:flex-row-reverse gap-x-32 py-10 pt-24">
+                <img src={shamim} className="w-full lg:w-1/3 rounded-lg" alt='...' />
                 <div className='w-full lg:w-1/2'>
                     <h1 className="text-3xl lg:text-5xl font-bold mt-4">Hi, I'm Shamim Sarker</h1>
                     <p className="py-6">I always try to keep myself updated with new technologies. <br /> Upcoming few years, I want to be more comfortable and more <br /> skilled in the tech world.</p>

@@ -9,10 +9,16 @@ const Navbar = () => {
             <Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
         </li>
         <li>
+            <Link activeClass="active" to="about" spy={true} smooth={true}>About</Link>
+        </li>
+        <li>
             <Link activeClass="active" to="projects" spy={true} smooth={true}>Projects</Link>
         </li>
         <li>
             <Link activeClass="active" to="my-skills" spy={true} smooth={true}>My Skills</Link>
+        </li>
+        <li>
+            <Link activeClass="active" to="blog" spy={true} smooth={true}>Blog</Link>
         </li>
         <li>
             <Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link>
@@ -20,7 +26,7 @@ const Navbar = () => {
     </>;
 
     return (
-        <div className="navbar bg-base-200">
+        <div className="navbar bg-base-200 fixed z-50 top-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
