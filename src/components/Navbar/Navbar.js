@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import {Link} from 'react-scroll';
 import logo from '../../assets/logo.png';
 import shamim from '../../assets/shamim.jpg';
@@ -6,7 +7,7 @@ import shamim from '../../assets/shamim.jpg';
 const Navbar = () => {
     const menuItems = <>
         <li>
-            <Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link>
+            <NavLink to={"/"}>Home</NavLink>
         </li>
         <li>
             <Link activeClass="active" to="about" spy={true} smooth={true}>About</Link>
@@ -18,7 +19,7 @@ const Navbar = () => {
             <Link activeClass="active" to="my-skills" spy={true} smooth={true}>My Skills</Link>
         </li>
         <li>
-            <Link activeClass="active" to="blog" spy={true} smooth={true}>Blog</Link>
+            <NavLink to={"/blog"}>Blog</NavLink>
         </li>
         <li>
             <Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link>
