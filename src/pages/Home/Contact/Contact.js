@@ -19,7 +19,7 @@ const Contact = () => {
 
     return (
         <div id='contact' className='my-20'>
-            <h2 className='text-4xl font-bold text-center my-10'>Contact Me</h2>
+            <h2 className='text-4xl font-bold text-center my-10 pt-20'>Contact Me</h2>
             <div className="hero">
                 <div className="w-4/5 hero-content flex-col lg:flex-row">
                     <div className="w-full lg:w-1/2 text-center lg:text-left">

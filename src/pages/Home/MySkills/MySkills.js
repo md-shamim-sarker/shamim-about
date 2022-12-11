@@ -3,7 +3,7 @@ import React from 'react';
 const MySkills = () => {
     return (
         <div id='my-skills' className='w-4/5 mx-auto'>
-            <h2 className='text-4xl font-bold text-center my-16'>My Skills</h2>
+            <h2 className='text-4xl font-bold text-center my-16 pt-20'>My Skills</h2>
             <div className='flex flex-wrap justify-center gap-6'>
                 <img src='https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png' alt="..." className='w-10 h-10 lg:w-28 lg:h-28 rounded-full' />
                 <img src='https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png' alt="..." className='w-10 h-10 lg:w-28 lg:h-28 rounded-full' />
