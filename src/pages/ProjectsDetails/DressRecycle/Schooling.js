@@ -5,18 +5,19 @@ import schooling2 from '../../../assets/schooling2.jpg';
 import schooling3 from '../../../assets/schooling3.jpg';
 import schooling4 from '../../../assets/schooling4.jpg';
 import schooling5 from '../../../assets/schooling5.jpg';
+import photoHandler from '../../../utilities/photoHandler';
 
 const Schooling = () => {
     return (
         <div className='mt-20'>
             <h2 className='text-5xl font-bold text-center'>Schooling.com</h2>
             <div className='w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 px-2 py-16'>
-                <img src={schooling} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={schooling1} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={schooling2} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={schooling3} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={schooling4} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={schooling5} alt=".." className='border border-blue-700 hover:scale-125' />
+                {photoHandler(schooling)}
+                {photoHandler(schooling1)}
+                {photoHandler(schooling2)}
+                {photoHandler(schooling3)}
+                {photoHandler(schooling4)}
+                {photoHandler(schooling5)}
             </div>
             <div className='w-full lg:w-4/5 mx-auto px-2 mb-16'>
                 <h2 className='text-xl'><strong>Project Name:</strong> Schooling.com (Educational Web Application) </h2>

@@ -10,23 +10,24 @@ import dress7 from '../../../assets/dress7.jpg';
 import dress8 from '../../../assets/dress8.jpg';
 import dress9 from '../../../assets/dress9.jpg';
 import dress10 from '../../../assets/dress10.jpg';
+import photoHandler from '../../../utilities/photoHandler';
 
 const DressRecycle = () => {
     return (
         <div className='mt-20'>
             <h2 className='text-5xl font-bold text-center'>Dress Recycle</h2>
             <div className='w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 px-2 py-16'>
-                <img src={dress} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress1} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress2} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress3} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress4} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress5} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress6} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress7} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress8} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress9} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={dress10} alt=".." className='border border-blue-700 hover:scale-125' />
+                {photoHandler(dress)}
+                {photoHandler(dress1)}
+                {photoHandler(dress2)}
+                {photoHandler(dress3)}
+                {photoHandler(dress4)}
+                {photoHandler(dress5)}
+                {photoHandler(dress6)}
+                {photoHandler(dress7)}
+                {photoHandler(dress8)}
+                {photoHandler(dress9)}
+                {photoHandler(dress10)}
             </div>
             <div className='w-full lg:w-4/5 mx-auto px-2 mb-16'>
                 <h2 className='text-xl'><strong>Project Name:</strong> Dress Recycle (Old Dress Selling Web Application)</h2>

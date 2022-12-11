@@ -5,18 +5,19 @@ import construction2 from '../../../assets/construction2.jpg';
 import construction3 from '../../../assets/construction3.jpg';
 import construction4 from '../../../assets/construction4.jpg';
 import construction5 from '../../../assets/construction5.jpg';
+import photoHandler from '../../../utilities/photoHandler';
 
 const Construction = () => {
     return (
         <div className='mt-20'>
             <h2 className='text-5xl font-bold text-center'>Creative Construction</h2>
             <div className='w-full lg:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 px-2 py-16'>
-                <img src={construction} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={construction1} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={construction2} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={construction3} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={construction4} alt=".." className='border border-blue-700 hover:scale-125' />
-                <img src={construction5} alt=".." className='border border-blue-700 hover:scale-125' />
+                {photoHandler(construction)}
+                {photoHandler(construction1)}
+                {photoHandler(construction2)}
+                {photoHandler(construction3)}
+                {photoHandler(construction4)}
+                {photoHandler(construction5)}
             </div>
             <div className='w-full lg:w-4/5 mx-auto px-2 mb-16'>
                 <h2 className='text-xl'><strong>Project Name:</strong> Creative-Construction (Personal Business Site)</h2>
